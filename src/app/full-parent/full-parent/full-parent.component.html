@@ -1,6 +1,10 @@
 <p>OPCIONES DEL SISTEMA</p>
 
-
-<app-home></app-home>
-<app-pays></app-pays>
-
+<div class="row">
+    <div class="col border rounded overflow-hidden mb-4 shadow-sm h-md-250 position-relative">
+        <app-home></app-home>
+    </div>
+    <div class="col g-0 border rounded overflow-hidden mb-4 shadow-sm h-md-250 position-relative">
+        <router-outlet name="paysOut"></router-outlet>
+    </div>
+</div>

@@ -12,7 +12,8 @@ const routes: Routes = [
       { path: '', redirectTo: 'bsc', pathMatch: 'prefix' },
       {
         path: 'bsc',
-        component: BSCComponent
+        component: BSCComponent,
+        outlet: 'home'
       }
     ]
     }

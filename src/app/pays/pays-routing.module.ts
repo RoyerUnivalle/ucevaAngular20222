@@ -8,15 +8,18 @@ const routes: Routes = [
   {
     path: '',
     component: PaysComponent,
+    outlet: 'paysOut',
     children: [
       { path: '', redirectTo: 'add', pathMatch: 'prefix' },
       {
         path: 'add',
-        component: AddPaysComponent
+        component: AddPaysComponent,
+        outlet: 'payActive'
       },
       {
         path: 'list',
-        component: ListPaysComponent
+        component: ListPaysComponent,
+        outlet: 'payActive'
       },
     ]
     }

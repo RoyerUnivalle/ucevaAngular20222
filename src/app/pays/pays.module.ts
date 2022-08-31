@@ -18,7 +18,9 @@ import { PaysComponent } from './pays/pays.component';
     PaysRoutingModule
   ],
   exports:[
-    PaysModule
+    AddPaysComponent,
+    ListPaysComponent,
+    PaysComponent
   ]
 })
 export class PaysModule { }
